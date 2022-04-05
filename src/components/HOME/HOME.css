@@ -1,0 +1,11 @@
+*{
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  .Home{
+    width:100%;
+    overflow: hidden;
+  }
+

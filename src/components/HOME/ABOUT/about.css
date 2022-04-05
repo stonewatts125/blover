@@ -1,0 +1,215 @@
+.About {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 50;
+    background-color: rgba(60, 45, 30, 0.8);
+    padding-top: 1%;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+}
+
+#figure1 {
+    width: 40%;
+    height: 50%;
+    margin-left: 25%;
+    margin-top: 15vh;
+    position: absolute;
+    background-color: rgba(255, 240, 190, 0.4);
+}
+
+#figure2 {
+    width: 20%;
+    height: 35%;
+    margin-left: 55%;
+    position: relative;
+    background-color: rgba(245, 200, 145, 0.3);
+    margin-top: 45vh;
+}
+
+/************************************************************/
+#overlay-pharse {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+
+#title {
+    width: 100%;
+    height: 15vh;
+    margin-top: 20vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+#vertical-line {
+    width: 100%;
+    flex-basis: 35%;
+    border-right: 3px solid white;
+
+}
+
+#ttl {
+    width: 100%;
+    flex-basis: 63%;
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 3.5vh;
+
+}
+
+#main-pharse {
+    width: 50%;
+    height: 20%;
+    margin-left: 30%;
+    margin-top: 5vh;
+    padding-top: 1%;
+    line-height: 150%;
+    overflow: hidden;
+
+}
+
+#signature {
+    width: 30%;
+    height: 5%;
+    margin-top: 5vh;
+    margin-left: 65%;
+    font-weight: bolder;
+
+}
+
+#underline {
+    width: 20%;
+    height: 1px;
+    margin-left: 65%;
+    background-color: white;
+    margin-top: 1px;
+}
+
+#fom-button {
+    width: 70px;
+    height: 70px;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(185, 185, 185, 0.35);
+    border-radius: 100%;
+    margin-top: 5vh;
+    margin-left: 30%;
+    font-size: 10px;
+    text-align: center;
+    padding-top: 28px;
+    font-weight: 900;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+
+#fom-button:hover {
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+
+}
+
+.hide {
+    visibility: hidden;
+}
+
+:root {
+    --animate-duration: 1s;
+    --animate-delay: 0.9s;
+}
+
+
+@media only screen and (max-width : 600px){
+    #figure1 {
+        width: 60%;
+        height: 55%;
+        margin-left: 15%;
+        margin-top: 10vh;
+    }
+    
+    #figure2 {
+        width: 35%;
+        height: 35%;
+        margin-left: 55%;
+        margin-top: 45vh;
+    }
+    
+    /************************************************************/
+    #overlay-pharse {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #title {
+        width: 100%;
+        height: 10vh;
+        margin-top: 15vh;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    
+    #vertical-line {
+        width: 100%;
+        flex-basis: 25%;
+        border-right: 3px solid white;
+    
+    }
+    
+    #ttl {
+        width: 100%;
+        flex-basis: 63%;
+        font-size: 30px;
+        font-weight: 700;
+        padding-top: 2.5vh;
+    
+    }
+    
+    #main-pharse {
+        width: 80%;
+        height: 30%;
+        margin-left: 10%;
+        margin-top: 5vh;
+        padding-top: 1%;
+        line-height: 150%;
+        overflow: hidden;
+    
+    }
+    
+    #signature {
+        width: 50%;
+        height: 3vh;
+        margin-top: 7vh;
+        margin-left: 40%;
+        font-weight: bolder;
+        font-size: 12px;
+    
+    }
+    
+    #underline {
+        width: 55%;
+        height: 1px;
+        margin-left: 40%;
+        background-color: white;
+        margin-top: 1px;
+    }
+    
+    #fom-button {
+        width: 70px;
+        height: 70px;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(185, 185, 185, 0.35);
+        border-radius: 100%;
+        margin-top: 7vh;
+        margin-left: 15%;
+        font-size: 10px;
+        text-align: center;
+        padding-top: 28px;
+        font-weight: 900;
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        transition: all .5s;
+    }
+}

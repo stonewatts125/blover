@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Lato:wght@100&family=Montserrat:wght@100&family=Roboto:wght@100&display=swap');
+
+/********************************************************************************************/
+.NavBar {
+    width: 100%;
+    height: 15vh;
+    top: 3%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: 100;
+}
+
+#main-nav {
+    width: 100%;
+    height: 10vh;
+    background-color: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav-logo {
+    width: 10%;
+    height: 3vh;
+    margin: 3.5vh 1vw 3.5vh 1vw;
+    opacity: 70%;
+    flex-basis: 20%;
+}
+
+#nav-left {
+    width: 70%;
+    height: 3vh;
+    margin: 3.5vh 1vw 3.5vh 1vw;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+    flex-basis: 50%;
+    color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-left-item {
+    -webkit-transform: scaleY(0.7);
+    transform: scaleY(0.7);
+}
+
+.nav-left-item:hover {
+    -webkit-transform: scaleY(0.9);
+    transform: scaleY(0.9);
+    transition: .5s;
+    color: rgba(255, 255, 255);
+}
+
+/**************************MENU*************************/
+#menu1 {
+    width: 25px;
+    height: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    ;
+    border-radius: 3px;
+}
+
+.menu2 {
+    width: 15px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.7);
+    ;
+    margin-top: 2px;
+    margin-left: 3px;
+
+}
+
+/*******************************************************/
+#nav-stock {
+    width: 20%;
+    height: 2.5vh;
+    padding-left: 5vw;
+    color: rgb(255, 255, 255, 0.7);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    background-color: none;
+    margin-top: 0;
+}
+
+#nav-stock>div {
+    font-size: 15px;
+    font-weight: 500;
+    -webkit-transform: scaleY(0.7);
+    transform: scaleY(0.7);
+}
+
+#nav-stock>div:hover {
+    font-weight: 700;
+    color: white;
+    text-decoration: underline;
+}
+
+/*****************************************************************/

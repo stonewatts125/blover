@@ -1,0 +1,16 @@
+.Blover{
+  top:0;
+  left:0;
+  overflow: hidden;
+}
+body {
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}

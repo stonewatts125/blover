@@ -1,0 +1,123 @@
+.Intro{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    z-index: 50;
+
+}
+#intro-content{
+    width: 70%;
+    height: 40vh;
+    color: rgb(255, 255, 255, 0.7);
+    margin-top: 55vh;
+    margin-left:5% ;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 1vh;
+}
+#h3{
+   height:20% ;
+   font-size: 45px;
+   font-weight: 900;
+}
+
+.line1{
+    height: 15% ;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 7vh ;
+}
+.line2{
+    height: 15% ;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 2vh ;
+    
+}
+#fom{
+    width: 15%;
+    height: 5vh;
+    border-radius: 10px;
+    margin-top: 2vh ;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 9px;
+    font-weight: 900;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+    background-color: rgba(230, 250, 253, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+}
+#fom:hover{
+    -webkit-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+    
+}
+
+
+
+
+/*******************************MOBILE*********************************/
+
+@media only screen and (max-width: 600px) {
+
+    #intro-content{
+        width: 85%;
+        height: 40vh;
+        color: rgb(255, 255, 255, 0.7);
+        margin-top: 40vh;
+        margin-left:7.5% ;
+        margin-right:7.5% ;
+        font-family: 'Josefin Sans', sans-serif;
+        padding-top: 1vh;
+        text-align: center;
+    }
+    #h3{
+       height:20% ;
+       font-size: 25px;
+       font-weight: 900;
+    }
+    
+    .line1{
+        height: 15% ;
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: 5vh ;
+    }
+    .line2{
+        height: 15% ;
+        font-size: 12px;
+        font-weight: 500;
+        margin-top: 2vh ;
+        
+    }
+    #fom{
+        width: 30vw;
+        height: 3vh;
+        border-radius: 10px;
+        text-align: center;
+        margin-top: 2.5vh ;
+        margin-left: 30vw;
+        font-size: 10px;
+        padding-top: .7vh;
+        font-weight: 900;
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        transition: all .5s;
+        background-color: rgba(230, 250, 253, 0.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(25px);
+        -webkit-backdrop-filter: blur(25px);
+    }
+    #fom:hover{
+        -webkit-transform: scale(1.05);
+        -o-transform: scale(1.05);
+        transform: scale(1.05);
+        
+    }
+
+}

@@ -1,0 +1,458 @@
+.Commerce {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 50;
+    background-color: rgba(0, 0, 0, 0);
+    display: grid;
+    grid-template-columns: auto auto;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    overflow: hidden;
+}
+
+.commerce-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding-top: 15px;
+    position: relative;
+}
+
+.cmc-title-share {
+    font-size: 20px;
+    font-weight: 1000;
+    -webkit-transform: scaleY(0.6);
+    transform: scaleY(0.6);
+    color: rgba(51, 50, 50, 0.8);
+}
+
+.cmc-title-finance,
+.cmc-title-recrui {
+    font-size: 15px;
+    font-weight: bolder;
+    -webkit-transform: scaleY(0.7);
+    transform: scaleY(0.7);
+}
+
+/*************************share******************************/
+.share {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    position: relative;
+}
+
+.share-bg {
+    background-image: url('./share4.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.cmc-title-share {
+    font-size: 20px;
+    font-weight: 1000;
+    -webkit-transform: scaleY(0.6);
+    transform: scaleY(0.6);
+    color: rgb(255, 255, 255);
+}
+
+#share-content {
+    width: 75%;
+    height: 70%;
+    margin: 0 12.5% 0 12.5%;
+    margin-top: 10vh;
+    position: relative;
+
+}
+
+.share-main-content {
+    width: 50%;
+    height: 50%;
+    margin: 25%;
+    margin-top: 10%;
+    position: absolute;
+
+}
+
+#rts {
+    padding-top: 9vh;
+    font-size: 25px;
+}
+
+#cmc-stock {
+    margin-top: 5vh;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+#share-btn {
+    width: 20%;
+    height: 6vh;
+    font-size: 12px;
+    padding-top: 2vh;
+    font-weight: bolder;
+    margin: 0% 40% 0 40%;
+    border-radius: 10px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+}
+
+#share-btn:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/*****************************************************************/
+.top-overlay {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: rgba(26, 26, 26, 0.55);
+    transition: background-color .7s ease-in-out;
+}
+
+.bottom-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(90%);
+    transition: filter .7s ease-in-out;
+}
+
+.commerce-item:hover .bottom-bg {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+.commerce-item:hover .top-overlay {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/*******************************finance**********************************/
+
+.finance {
+
+    position: relative;
+}
+
+.top-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding-top: 15px;
+}
+
+.ivm-bg {
+    background-image: url('./ivm.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#fnc-content {
+    width: 100%;
+    height: 20%;
+    margin-top: 15vh;
+    font-size: 17px;
+}
+
+.fnc-btn {
+    width: 20%;
+    height: 10%;
+    margin-left: 40%;
+    margin-top: 5vh;
+    border-radius: 10px;
+    padding-top: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+.fnc-btn:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/*****************************recruiment**********************************/
+.recruitment {
+    position: relative;
+}
+
+.rcr-bg {
+    background-image: url('./rcr.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#rcr-content {
+    width: 100%;
+    height: 20%;
+    line-height: 150%;
+    margin-top: 15vh;
+    overflow: hidden;
+}
+
+.rcr-btn {
+    width: 100%;
+    height: 10%;
+    display: flex !important;
+    justify-content: space-evenly;
+    margin-top: 5vh;
+    color: rgb(255, 255, 255) !important;
+}
+
+#job {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    flex-basis: 20%;
+    padding-top: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+#register {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    flex-basis: 20%;
+    padding-top: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+/**************************SPINNER******************************/
+.spinner {
+    width: 70%;
+    height: 70%;
+    margin-left: 15%;
+    position: relative;
+    z-index: 70;
+}
+
+#spin1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: zoom-in-out-1 3.6s infinite;
+    transition: opacity 1s ease-in-out;
+}
+
+#spin2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    vertical-align: middle;
+    animation: zoom-in-out-2 3.3s infinite;
+}
+
+#spin3 {
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: zoom-in-out-3 3s infinite;
+}
+
+@keyframes zoom-in-out-1 {
+    0% {
+        transform: scale(0.9, 0.9);
+    }
+
+    50% {
+        transform: scale(1.1, 1.1);
+        opacity: .7;
+    }
+
+    100% {
+        transform: scale(0.9, 0.9);
+    }
+}
+
+@keyframes zoom-in-out-2 {
+    0% {
+        transform: scale(0.8, 0.8);
+    }
+
+    50% {
+        transform: scale(1, 1);
+    }
+
+    100% {
+        transform: scale(0.8, 0.8);
+    }
+}
+
+@keyframes zoom-in-out-3 {
+    0% {
+        transform: scale(.7, .7);
+    }
+
+    50% {
+        transform: scale(1.15, 1.15);
+    }
+
+    100% {
+        transform: scale(.7, .7);
+    }
+}
+
+
+/*********************************************************************/
+
+@media only screen and (max-width:600px) {
+
+    .Commerce {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: auto;
+        font-family: 'Josefin Sans', sans-serif;
+        padding: 0 !important;
+    }
+
+    /**********************SHARE***********************/
+    .cmc-title-share {
+        font-size: 15px;
+        font-weight: 1000;
+    }
+
+    .share {
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        height: 40vh;
+    }
+
+    #share-content {
+        width: 75%;
+        height: 25vh;
+        margin: 0 12.5% 0 12.5%;
+        margin-top: 3vh;
+
+    }
+
+    .share-main-content {
+        width: 80%;
+        height: 100%;
+        margin-left: 10%;
+        margin-top: 0 !important;
+    }
+
+    #rts {
+        padding-top: 5vh;
+        font-size: 15px;
+    }
+
+    #cmc-stock {
+        margin-top: 2vh;
+        font-size: 30px;
+        font-weight: 900;
+    }
+
+    #share-btn {
+        width: 30%;
+        height: 3vh;
+        font-size: 10px;
+        padding-top: .75vh;
+        margin: 2vh 35% 0 35%;
+        border-radius: 10px;
+
+    }
+
+    /********************************************************/
+    .cmc-title-finance,
+    .cmc-title-recrui {
+        font-size: 14px;
+        font-weight: bolder;
+        -webkit-transform: scaleY(0.7);
+        transform: scaleY(0.7);
+    }
+
+    .top-overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        padding-top: 10px;
+    }
+
+
+    /**************************finance******************************/
+    .finance {
+        width: 100%;
+        height: 30vh;
+        position: relative;
+    }
+    #fnc-content {
+        width: 100%;
+        height: 10vh;
+        margin-top: 6vh;
+        line-height: 30px;
+        font-size: 15px;
+    }
+    
+    .fnc-btn {
+        width: 30%;
+        height: 3vh;
+        margin-left: 35%;
+        margin-top: 3vh;
+        border-radius: 10px;
+        padding-top: 5px;
+        font-size: 12px;
+    }
+    /****************************RECRUITMENT****************************/
+    .recruitment {
+        width: 100%;
+        height: 30vh;
+        position: relative;
+    }
+    #rcr-content {
+        width: 95%;
+        height: 10vh;
+        line-height: 120%;
+        margin-top: 7vh;
+        margin-left: 2.5%;
+        overflow: hidden;
+        font-size: 14px;
+    }
+    
+    .rcr-btn {
+        width: 100%;
+        height: 10%;
+        display: flex !important;
+        justify-content: space-evenly;
+        margin-top: 3vh;
+        color: rgb(255, 255, 255) !important;
+    }
+    
+    #job {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        flex-basis: 30%;
+        padding-top: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        font-size: 12px;
+    }
+    
+    #register {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        flex-basis: 30%;
+        padding-top: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        font-size: 12px;
+    }
+
+}

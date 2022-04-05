@@ -1,0 +1,253 @@
+.Companies {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 50;
+  overflow-y: hidden;
+  background-color: rgba(133, 198, 255, 0.25);
+}
+
+.grid-container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: auto auto auto auto;
+  /*gap: 0.3vh;
+    padding:0.3vh;*/
+  gap: 0;
+  padding: 0;
+}
+
+.grid-item {
+  background-color: rgba(187, 187, 187, 0.8);
+  margin: 0 !important;
+
+}
+
+.item-1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.item-6 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.company-name {
+  width: 40%;
+  height: 10%;
+  margin-left: 30%;
+  position: absolute;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  margin-top: 35vh;
+
+}
+
+.of1,
+.of6 {
+  margin-top: 35vh;
+}
+
+/************** co giãn ***************/
+
+.wrap {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+
+}
+
+.wrapbg {
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 1.2s;
+  -moz-transition: all 1.2s;
+  -o-transition: all 1.2s;
+  transition: all 1.2s;
+  position: absolute;
+  padding: 0;
+  overflow: hidden;
+
+}
+
+.wraptop {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+  transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+}
+
+.wraptop:hover {
+  opacity: 0;
+}
+
+.wraptop>div:hover {
+  opacity: 1;
+}
+
+/* Several different images */
+
+.wrap:hover .wrapbg,
+.wrap:focus .wrapbg {
+  -ms-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.wrap:hover .wrapbg:before,
+.wrap:focus .wrapbg:before {
+  display: block;
+}
+
+.wrap:hover a,
+.wrap:focus a {
+  display: block;
+}
+
+.wrapbg:before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+}
+
+/* Media Queries */
+@media screen and (max-width: 960px) {
+  .wrap {
+    width: 100%;
+    margin: 20px 0px
+  }
+
+}
+
+/**************************************************************/
+.re {
+  background-image: url('./re1.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-bottom: 0;
+}
+
+.ar {
+  background-image: url('./ar3.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.sto {
+  background-image: url('./stone.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.int {
+  background-image: url('./int2.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.tech {
+  background-image: url('./tech.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.hob {
+  background-image: url('./hob2.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+
+@media only screen and (max-width : 600px) {
+
+  .Companies {
+    width: 100%;
+    height: 150vh;
+    position: relative;
+    z-index: 50;
+    overflow-y: hidden;
+    background-color: rgba(133, 198, 255, 0.25);
+    margin: 0 !important;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns:auto;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+  }
+
+  .grid-item {
+    background-color: rgba(187, 187, 187, 0.8);
+    margin: 0 !important;
+  
+  }
+  .item-1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+  
+  .item-6 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+  
+  .company-name {
+    width: 40%;
+    height: 3vh;
+    margin-left: 30%;
+    position: absolute;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    margin-top: 12vh;
+
+  }
+  
+  .of1,
+  .of6 {
+    margin-top: 12vh;
+  }
+
+  .ar {
+    background-image: url('./ar1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  
+  .sto {
+    background-image: url('./stone3.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  
+  .int {
+    background-image: url('./int2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  
+  .tech {
+    background-image: url('./tech.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}

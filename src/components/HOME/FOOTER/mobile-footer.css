@@ -1,0 +1,145 @@
+.MobileFooter {
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    position: relative;
+    z-index: 50;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#m-foot-logo {
+    width: 100%;
+    height: 5vh;
+}
+
+#m-foot-logo>img {
+    width: 100%;
+    height: 30%;
+    margin-left: 0;
+    margin-top: 2%;
+    opacity: .7;
+}
+
+/********************************content*******************************/
+#mobile-foot-content {
+    width: 100%;
+    height: 25vh;
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#mf-companies {
+    flex-basis: 25%;
+    text-align: center;
+    padding-top: 5%;
+}
+
+#mf-group {
+    flex-basis: 25%;
+    text-align: center;
+    padding-top: 5%;
+}
+
+#mf-customer {
+    flex-basis: 25%;
+    text-align: center;
+    padding-top: 5%;
+}
+/***************************/
+
+
+.mf-ft-ttl {
+    font-size: 15px;
+    font-weight: bolder;
+    -webkit-transform: scaleY(0.7);
+    transform: scaleY(0.7);
+    color: rgb(255, 255, 255);
+}
+
+.mf-ft-items {
+    height: 60%;
+    margin-top: 10%;
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+}
+
+.mf-ft-item {
+    margin-top: 10%;
+}
+
+.mf-ft-item:hover {
+    font-weight: bold;
+}
+
+/****************************************social media**********************************************/
+
+.mobile-social-media{
+    width: 100%;
+    height: 10vh;
+    margin-top: 0;
+    padding-top: 1vh;
+}
+
+.mf-social-ttl {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 0;
+    text-align: center;
+    -webkit-transform: scaleY(0.7);
+    transform: scaleY(0.7);
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: 12px;
+}
+
+#mf-social-media {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-evenly;
+    color: rgba(255, 255, 255, 0.65);
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+/*****************************************credit*********************************************/
+.mf-foot-credit {
+    width: 100%;
+    margin: 0;
+    height: 5vh;
+    color: rgb(255, 255, 255);
+    display: block;
+
+}
+
+#mf-credit-left {
+    width: 100%;
+    height: 2vh;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+    font-size: 8px;
+
+}
+
+.mf-credit-left-item {
+    flex-basis: 20%;
+    text-align: center;
+
+}
+
+.mf-credit-left-item:hover {
+    font-weight: bold;
+}
+
+#mf-credit-right {
+    width: 100%;
+    height: 3vh;
+    margin-top: 2vh;
+    text-align: center;
+    font-size: 12px;   
+
+}
+

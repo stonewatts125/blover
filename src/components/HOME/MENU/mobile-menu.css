@@ -1,0 +1,96 @@
+@media only screen and (max-width: 600px) {
+    .MobileMenu {
+        width: 94%;
+        height: 98vh;
+        position: fixed;
+        z-index: 200;
+        margin-top: 1vh;
+        margin-left: 3%;
+        border-radius: 15px;
+        overflow: hidden;
+        animation: fadeInRight .5s both;
+        -webkit-animation: fadeInRight .5s both;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(25px);
+        -webkit-backdrop-filter: blur(25px);
+    }
+
+    #top-Mmenu {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(230, 250, 253, 0.1);
+        position: absolute;
+        text-align: center;
+        font-family: 'Josefin Sans', sans-serif;
+        color: rgb(255, 255, 255, .7);
+        font-weight: bolder;
+    }
+
+    #close {
+        width: 100%;
+        height: 7%;
+        padding-top: 20px;
+    }
+
+    #close>span {
+        width: 3vh;
+        height: 3vh;
+        margin-left: 80%;
+        text-align: center;
+        animation: spinXbtn infinite .5s linear;
+        -webkit-animation: spinXbtn infinite .5s linear;
+        animation-iteration-count: 1;
+        -webkit-animation-iteration-count: 1;
+        opacity: .7;
+    }
+
+    #close>span:hover {
+        opacity: 1;
+    }
+
+    #Mmenu-content {
+        width: 100%;
+        height: 80%;
+
+    }
+
+    .Mmc-item {
+        margin-top: 3vh;
+        -webkit-transform: scaleY(0.65);
+        transform: scaleY(0.65);
+    }
+
+    .Mmc-item:hover {
+        color: rgba(255, 255, 255);
+    }
+
+
+    @-webkit-keyframes fadeOutRight {
+        0% {
+            opacity: 1;
+            -webkit-transform: translateX(0);
+        }
+
+        100% {
+            opacity: 0;
+            -webkit-transform: translateX(20px);
+        }
+    }
+
+    @keyframes fadeOutRight {
+        0% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        100% {
+            opacity: 0;
+            transform: translateX(20px);
+        }
+    }
+
+    .fadeOut {
+        animation: fadeOutRight .5s both;
+        -webkit-animation: fadeOutRight .5s both;
+    }
+}
