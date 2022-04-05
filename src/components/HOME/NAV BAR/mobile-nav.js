@@ -3,6 +3,7 @@ import './mobile-nav.css';
 import Logo from './bloverlogo.svg'
 import { StockContext } from '../stockcontext'
 import $ from 'jquery'
+import {Link} from "react-router-dom"
 
 
 function MobileNav() {
@@ -23,7 +24,7 @@ function MobileNav() {
     return (
         <section className="MobileNav">
             <div className='mobilenav-main'>
-                <div className='mobile-nav-logo pn-item' onClick={() => {window.location ='/'}}><img src={Logo} /></div>
+                <div className='mobile-nav-logo pn-item'><img src={Logo} /><a href='/'></a></div>
                 <div className='mobile-nav-menu pn-item'><div className='menu1' onClick={openMenu}></div></div>
             </div>
             <div className='mobile-nav-stock' onClick={() => { window.location = '/stock' }}> <div><b>BLVR:</b> ${stock} {(percent > 0) ? '+' + percent : percent}% </div> </div>
