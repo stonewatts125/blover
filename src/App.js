@@ -34,7 +34,7 @@ function App() {
   return (
     <div className="Blover">
       <StockContext.Provider value={{ contextmenu: [menu, setMenu], contextstock: [stock, setStock], contextoldstock: oldstock, contextpercent: [percent, setPercent] }}>
-        <Router>
+        <HashRouter>
           <Routes>
             <Route exact path="/" element={<Home />}></Route>
             <Route exact path="/login" element={<Login />}></Route>
@@ -43,7 +43,7 @@ function App() {
             <Route exact path="/signup" element={<SignUp />}></Route>
             <Route exact path="/account" element={<Account />}></Route>
           </Routes>
-        </Router>
+        </HashRouter>
       </StockContext.Provider>
     </div>
   );
